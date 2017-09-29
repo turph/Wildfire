@@ -1,0 +1,1 @@
+$(document).ready(function(){$("#footer").load("includes/footer.html"),$("#navPanel").load("includes/navPanel.html")});

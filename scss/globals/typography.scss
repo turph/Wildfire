@@ -1,0 +1,24 @@
+html {font-size: 14px;}
+body {
+  font-family:"proxima-nova",Helvetica,Arial,sans-serif;
+  font-weight:400;
+  color: $grey1;
+	line-height:1.25;
+}
+a{text-decoration:none;}
+p {margin-bottom: 14px;}
+h1{margin-top: 0;font-size: 18px;font-weight:700;}
+h2{font-size: 16px;font-weight:600;}
+h3{font-size: 16px;font-weight:400;}
+h4{font-size: 14px;font-weight:400;}
+h5{font-size: 14px;font-weight:400;}
+.font_medium {font-size: 12px;}
+.font_small {font-size: 10px;}
+
+
+// Email project specific typography
+.title{@extend h4;color:$red;font-weight:bold;}
+.sectionTitle{@extend h5;color:$red;}
+
+.legal{@extend .font_small;color:$grey2;}
+.nowrap{white-space:nowrap;}

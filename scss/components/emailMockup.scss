@@ -1,0 +1,29 @@
+body {margin:0;padding:0;}
+.email{
+	section{margin:10px;}
+	.email_header{
+		border-bottom:3px solid $red;width:100%;
+		img{margin:0 0 4px 10px;}
+	}
+
+	// Device specific styles
+	.largeViewport{
+		.email_header{
+			padding-top:30px;
+			img{height:42px;}
+		}
+	}
+	.phoneViewport{
+		.email_header{
+			padding-top:15px;
+			img{height:32px;}
+		}
+	}
+}
+
+
+
+
+@media screen and (max-width: 480px) {
+}
+

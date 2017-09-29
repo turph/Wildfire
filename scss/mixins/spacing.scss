@@ -1,0 +1,39 @@
+@mixin spacing($space) {
+	padding-top: $space;
+	padding-bottom: $space;
+}
+@mixin content_width($content_width) {
+   max-width:$content_width;
+   margin-left:auto;
+   margin-right:auto;
+}
+
+
+
+.space_4{
+	@include spacing(4px);
+}
+.space_8{
+	@include spacing(8px);
+}
+.space_10{
+	@include spacing(10px);
+}
+.space_12{
+	@include spacing(12px);
+}
+.space_20{
+	@include spacing(20px);
+}
+.space_32{
+	@include spacing(32px);
+}
+.space_48{
+	@include spacing(48px);
+}
+.space_60{
+	@include spacing(60px);
+}
+.space_75{
+	@include spacing(75px);
+}

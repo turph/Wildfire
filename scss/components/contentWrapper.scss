@@ -1,0 +1,20 @@
+.email{
+	.content{
+		margin-left:350px;
+		float:left;
+		width:2175px;
+		#confirmationEmail, #voucherEmail, #voucherDocument{float:left;margin-right:20px;}
+		.emailBody{background-color:$white;}
+		.largeViewport{
+			width:700px;background-color:$grey4;
+			.emailWidth{width:600px;margin-left:50px;}
+		}
+		.phoneViewport{
+			width:320px;background-color:$grey4;padding:0 10px;
+			.emailWidth{width:100%;margin:0;}
+		}
+	}
+}
+
+@media screen and (max-width: 480px) {
+}

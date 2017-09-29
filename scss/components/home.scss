@@ -1,0 +1,14 @@
+.home{
+	#content{
+		background-color:$red;
+		height: -webkit-calc(50vh);
+		height: -moz-calc(50vh);
+		height: calc(50vh);
+		text-align:center;
+		position:inherit;
+		h2, h3{color:$grey4;}
+		h2{padding-top:70px;font-size:2.75em;margin-bottom:0;}
+		h3{padding-left:20px;padding-right:20px;font-size:1.5em;}
+	}
+	footer{display:none;}
+}

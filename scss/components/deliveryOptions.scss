@@ -1,0 +1,32 @@
+.desktopWidth{width:720px;}
+.phoneWidth{width:320px;}
+#contentWrapper{float:left;}
+
+.deliveryOptions{
+	h2{color:$blue2;opacity:0.6;}
+	h3{
+		font-size:24px;
+		font-weight:bold;
+		color:$black;
+	}
+	h4{margin-top:-24px;}	//This is junk simply to hack the existing h4 margin. This line of copy will be deleted.
+	label{
+		color:$black;
+		font-size:16px;
+		font-weight:bold;
+		.font_medium{font-weight:normal;}
+	}
+	.do{margin:0 0 14px 0;}
+	.do_details{
+		margin:6px 0 8px 28px;
+		color:$grey1;
+		.do_question{
+			font-weight:bold;
+		}
+	}
+	ul{
+		margin:6px 0 0 -14px;
+		li{padding-bottom:4px;}
+	}
+	.red{color:$red;}
+}

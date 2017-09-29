@@ -1,0 +1,57 @@
+
+
+@media screen and (max-width: 480px) {
+	.hero{
+		height: -webkit-calc(100vh - 55px);
+		height: -moz-calc(100vh - 55px);
+		height: calc(100vh - 55px);
+		background-size:cover;
+		background-position:top center;
+		.brandDot{
+			padding-top:60px;
+			.dot{
+				color:$white;
+				font-size:1.75em;
+				font-weight:bold;
+				text-align:center;
+				text-transform:uppercase;
+				line-height:3.25em;
+				@include circle(3.0em, $red);
+				@include center;
+			}
+		}
+		.headline{
+			padding-top:70px;
+			margin-left:10px;
+			text-shadow:
+			    1px 1px 0 rgba(43,43,43,0.3),  
+			    1px 1px 0 rgba(43,43,43,0.3),
+			    1px 1px 0 rgba(43,43,43,0.3),
+			    1px 1px 0 rgba(43,43,43,0.3);
+			.title{font-size:32px;line-height:30px;font-weight:bold;color:$white;margin:0;text-align:left;}
+			.subtitle{font-size:18px;color:$white;}
+		}
+		.essence{
+			background-color:rgba(0,0,0,0.6);width:100%;height:65px;overflow:hidden;position:absolute;bottom:0;line-height:1.1em;
+			> div{
+				display:inline-block;width:49%;padding:8px 0;text-align:center;color:$white;font-size:14px;
+				&:nth-child(1){border-right:2px solid $blue2;}
+			}
+			.top{padding-bottom:4px;display:inline-block;color:$white;}
+			.bottom{text-transform:capitalize;padding-top:4px;}
+			.ease{
+				.top{border-bottom:1px solid $blue2;}
+				.bottom{color:$blue2;}
+			}
+			.finance{
+				.top{
+					border-bottom:1px solid $red;
+					dl{width:100%;overflow:hidden;margin:0;}
+					dt{float:left;width:46%;text-align:right;}
+					dd{float:right;width:46%;text-align:left;margin:0;}
+				}
+				.bottom{color:$red;}
+			}
+		}
+	}
+}

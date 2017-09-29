@@ -1,0 +1,65 @@
+
+
+@media screen and (max-width: 480px) {
+	.attractions{
+		.attractionList{
+			width:80%;
+			padding:0 8px 26px 8px;
+			margin-top:10px;
+			background:rgba(255,255,255, 0.8);
+			position:relative;
+			@include center;
+			border-bottom-right-radius:10px;
+			border-bottom-left-radius:10px;
+			-moz-border-radius-bottomright:10px;
+			-moz-border-radius-bottomleft:10px;
+			ul{list-style:none;margin:0;padding:0;}
+			li{padding:6px 0;}
+			.attractionNumber{
+				display: block;
+				width: 20px;
+				height: 20px;
+				background:$grey3;
+				color:$white;
+				border-radius: 50%;
+				text-align: center;
+				margin:0;
+				float: left;
+				line-height:20px;
+				font-size:12px;
+			}
+			.attractionLabel{margin-left:26px;line-height:18px;}
+			.orLabel{color:$red;font-weight:600;}
+		}
+		.attractionTile{
+			margin-top:-30px;
+			position:static;
+			width:100%;
+			background-size:cover;
+			.attractionName{
+				position:relative;bottom:40px;left:12px;font-size:18px;color:$white;width:80%;
+				text-shadow:
+				    1px 1px 0 rgba(43,43,43,0.3),  
+				    1px 1px 0 rgba(43,43,43,0.3),
+				    1px 1px 0 rgba(43,43,43,0.3),
+				    1px 1px 0 rgba(43,43,43,0.3);
+			}
+		}
+		.attractionTile:before{
+			content:"";
+			display:block;
+			padding-top:100%;
+		}
+		.cityTag{
+			width:80%;padding:18px 8px 26px 8px;margin-top:-30px;text-align:center;
+			background:rgba(255,255,255, 0.8);
+			position:relative;
+			@include center;
+			border-top-right-radius:10px;
+			border-top-left-radius:10px;
+			-moz-border-radius-topright:10px;
+			-moz-border-radius-topleft:10px;
+			img{text-align:center;height:27px;}
+		}
+	}
+}

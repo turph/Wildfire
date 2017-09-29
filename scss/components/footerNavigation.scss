@@ -1,0 +1,64 @@
+footer{
+	position:fixed;
+	bottom:10px;right:10px;
+	width:100%;
+	z-index:100;
+	
+	.menuDot{
+		float:right;
+		.dot{
+			color:$white;
+			font-size:1.5em;
+			font-weight:normal;
+			text-align:center;
+			text-transform:uppercase;
+			line-height:1.1em;
+			@include circle(1.5em, $red);
+			@include center;
+		}
+	}
+
+
+}
+#navPanel{
+	position:fixed;
+	top:50%;
+	left:0;
+	z-index:10;
+	background-color:$white;
+	width:100%;
+	height: -webkit-calc(50vh);
+	height: -moz-calc(50vh);
+	height: calc(50vh);
+	.productLogo{
+		height:32px;
+		text-align:center;
+		bottom:0;
+		margin:6px 0;
+		img{height:24px;margin-top:4px}
+	}
+	.navOption{
+		float:left;
+		position:relative;
+		width:30%;
+		margin:4px;
+		border:1px solid $grey3;
+		color:$grey2;
+		@include border-radius(6px)
+		.box{
+			position:absolute;
+			top:0;left:0;bottom:0;right:0;
+			text-align:center;
+			padding:22px 8px 8px 8px;
+		}
+		img{height:50%;@include center;padding-bottom:10px;}
+	}
+	.navOption:before{
+		content:"";
+		display:block;
+		padding-top:100%;
+	}
+}
+.home{
+	#navPanel{display:block;}
+}

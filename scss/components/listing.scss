@@ -1,0 +1,88 @@
+.att_list{
+	margin:0 10px;
+	section{float:left;width:100%;margin:20px 0 8px 0;}
+	.groupTitle{border-bottom:1px solid $grey4;margin-bottom:2px;}
+	.att_tile{
+		float:left;
+		height:130px;
+		border:1px solid $grey4;
+		margin:4px;
+		position:relative;
+		.att_title{
+			position:absolute;
+			bottom:0;
+			padding:4px 2px 2px 2px;
+			background-color:$white;
+			opacity:.9;
+			height:34px;
+			overflow:hidden;
+			color:$blue;
+			width:100%;
+		}
+	}
+	.day{
+		.att_tile{
+			width:46.5%;
+		}
+	}
+	.no_visit{
+		margin-bottom:60px;
+		.att_tile{
+			width:30%;
+			.att_title{font-size:12px;height:28px;}
+		}
+	}
+	.att_tile{
+		background-size:cover;
+		background-repeat:no-repeat;
+		background-position:center center;
+	}
+	#esb{background-image:url("http://s1.citypass.net/img-9b72034/products/new-york/attractions/empire/empire-hero-sm.jpg");}
+	#amnh{background-image:url("http://s1.citypass.net/img-8bd8863/products/new-york/attractions/amnh/amnh-hero-sm.jpg");}
+	#mma{background-image:url("http://s1.citypass.net/img-8bd8863/products/new-york/attractions/met/met-hero-sm.jpg");}
+	#trod{background-image:url("http://s1.citypass.net/img-8bd8863/products/new-york/attractions/toprock/toprock-hero-sm.jpg");}
+	#gugg{background-image:url("http://s1.citypass.net/img-8bd8863/products/new-york/attractions/guggenheim/guggenheim-hero-sm.jpg");}
+	#slei{background-image:url("http://s1.citypass.net/img-8bd8863/products/new-york/attractions/statue/statue-hero-sm.jpg");}
+	#clsc{background-image:url("http://s1.citypass.net/img-8bd8863/products/new-york/attractions/circle/circle-hero-sm.jpg");}
+	#nine{background-image:url("http://s1.citypass.net/img-8bd8863/products/new-york/attractions/911memorial/911memorial-hero-sm.jpg");}
+	#isasm{background-image:url("http://s1.citypass.net/img-8bd8863/products/new-york/attractions/intrepid/intrepid-hero-sm.jpg");}
+}
+
+
+.attraction_listing{
+	.row{
+		margin-bottom:14px;
+		display:flex;
+		>div{
+			width:8%;
+			float:left;
+			.optionDot{
+				.dot{
+					color:$grey2;
+					font-size:.95em;
+					font-weight:normal;
+					text-align:center;
+					text-transform:uppercase;
+					line-height:1.65em;
+					@include circle(1.5em, $grey4);
+					@include center;
+				}
+			}
+		}
+		.option{
+			width:92%;
+			.listOR{padding-left:24px;color:$grey3;font-weight:bold;text-transform:uppercase;}
+		}
+		.ticket:before{
+			content:"";
+			display:block;
+			background:url("../img/ico_move-gray.png") no-repeat;
+			background-position-y:5px;
+			width:14px;height:14px;
+			float:left;
+			margin:0 6px 0 0;
+			opacity:.5;
+		}
+	}
+	>div:nth-child(2){margin-top:8px;}
+}

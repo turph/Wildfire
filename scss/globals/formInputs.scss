@@ -1,0 +1,11 @@
+.btn{
+	font-size:1em;
+	padding:1em 1.5em;
+	color:$white;
+	box-shadow:none !important;
+	@include transition(all, 0.5s, ease);
+}
+.primary{background-color:$red;}
+.primary:hover{background-color:$red1;}
+.secondary{background-color:$blue2;}
+.secondary:hover{background-color:$blue1;}

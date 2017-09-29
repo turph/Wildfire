@@ -1,0 +1,41 @@
+
+
+@media screen and (max-width: 480px) {
+	.hiw{
+		.keyPoint > div{width:30%;float:left;text-align:center;}
+		.keyPoint{
+			display:flex;
+			img{margin:10px 0;}
+			h3,h4{margin:0;}
+			h3{color:$blue;}
+			h4{color:$grey2;}
+			& div:first-child{margin-right:12px;};
+			& div:last-child{margin-left:12px;};
+		}
+		.keyNav{
+			margin-top:6px;border-bottom:1px solid $grey1;
+			& > div{margin-bottom:-1px;}
+			.keyNav_position1{margin-left:10%;}
+			.keyNav_position2{margin-left:45%;}
+			.keyNav_position3{margin-left:80%;}
+		}
+		.keyValues{
+			clear:both;
+			padding:8px;
+			background-color:$white;
+			color:$grey2;
+			.value{
+				margin:10px 0;
+				.icon{
+					float:left;
+					img{height:32px;}
+				}
+				.description{
+					margin-left:45px;
+					.label{text-transform:uppercase;display:block;color:$blue2;}
+				}
+			}
+			.details{text-align:center;border-top:1px solid $grey4;padding-top:6px;}
+		}
+	}
+}

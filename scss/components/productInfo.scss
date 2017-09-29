@@ -1,0 +1,89 @@
+
+
+@media screen and (max-width: 480px) {
+	.productIntro{
+		.productHeadline{
+			text-align:center;clear:both;
+			h1,h2{margin:2px 0;}
+			h1{}
+			h2{color:$grey2;font-weight:400;}
+		}
+		.productCarousel{
+			margin:8px 0;position:relative;
+			width:100%;
+			text-align:center;
+			img{height:200px;}
+			.carousel-prev,
+			.carousel-next
+			{
+		    font-size:20px;
+				color:$white;
+		    position: absolute;
+		    top: 50%;
+		    -webkit-transform: translate(0, -50%);
+		    -ms-transform: translate(0, -50%);
+		    transform: translate(0, -50%);
+
+		    cursor: pointer;
+
+		    border: none;
+				@include circle(32px, $grey2);
+				opacity:0.1;
+				z-index:100;
+			}
+			.carousel-prev{left:0;}
+			[dir='rtl'] .carousel-prev{right:0;left: auto;}
+			.carousel-prev:before{content: '<';}
+			[dir='rtl'] .carousel-prev:before{content: '<';}
+
+			.carousel-next{right:0;}
+			[dir='rtl'] .carousel-next{right: auto;left:0;}
+			.carousel-next:before{content: '>';}
+			[dir='rtl'] .carousel-next:before{content: '>';}
+			
+		}
+		.carousel-dots{
+			padding:0;margin:0;
+			list-style:none;
+			text-align:center;
+	    -webkit-margin-before:0;
+	    -webkit-margin-after:0;
+	    -webkit-padding-before:0;
+	    -webkit-padding-after:0;
+	    -webkit-padding-start:0;
+			li{display:inline-block;}
+			li.active{
+				button{background-color:$blue2;opacity:0.7;}
+			}
+
+			button{
+		    -webkit-transform: translate(0, -50%);
+		    -ms-transform: translate(0, -50%);
+		    transform: translate(0, -50%);
+		    cursor: pointer;
+		    border: none;
+				@include circle(12px, $grey2);
+				opacity:0.2;
+			}
+		}
+		.productBar{
+			float:left;width:100%;border-bottom:1px solid $grey4;margin-top:12px;padding-bottom:12px;display:flex;
+			div{
+				width:33%;float:left;
+				&:nth-child(1){border-right:1px solid $red;}
+				&:nth-child(3){border-left:1px solid $red;}
+			}
+			.finance{
+				dl{margin:0;padding:0;}
+				dt{float:left;width:48%;text-align:right;}
+				dd{float:right;width:40%;text-align:left;color:$red;padding:0 2px;margin:0;}
+			}
+			.savings{text-align:center;padding-top:6px;;color:$red;display:block;}
+			.reviews{text-align:center;font-size:12px;}
+		}
+		.productCTA{
+			position:inherit;display:flex;width:100%;padding-top:15px;
+			.btn{width:100%;}
+		}
+	}
+}
